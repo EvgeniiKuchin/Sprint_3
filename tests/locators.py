@@ -16,9 +16,9 @@ class Locators:
     TEXT_FILLINGS = "//h2[contains(text(),'Начинки')]" # Текст начинки
     BAGEL = "/html[1]/body[1]/div[1]/div[1]/main[1]/section[1]/div[1]/div[1]/span[1]" # Кнопка булки
     TEXT_BAGEL = "//h2[contains(text(),'Булки')]" # Текст булки
-    ELELENT_NAME_REGISTRATION = "//body/div[@id='root']/div[1]/main[1]/div[1]/form[1]/fieldset[1]/div[1]/div[1]/input[1]"
-    ELELENT_EMAIL_REGISTRATION = "//body/div[@id='root']/div[1]/main[1]/div[1]/form[1]/fieldset[2]/div[1]/div[1]/input[1]"
-    ELELENT_PASSWORD_REGISTTATION = "//body/div[@id='root']/div[1]/main[1]/div[1]/form[1]/fieldset[3]/div[1]/div[1]/input[1]"
+    ELELENT_NAME_REGISTRATION = "//label[text()='Имя']/following-sibling::input"
+    ELELENT_EMAIL_REGISTRATION = "//label[text()='Email']/following-sibling::input"
+    ELELENT_PASSWORD_REGISTTATION = "//label[text()='Пароль']/following-sibling::input"
     BUTTON_REGISTER = "//button[contains(text(),'Зарегистрироваться')]"
     TEXT_INCORRECT_PASSWORD = "/html[1]/body[1]/div[1]/div[1]/main[1]/div[1]/form[1]/fieldset[3]/div[1]/p[1]"
     BUTTON_LOG_OUT = "/html[1]/body[1]/div[1]/div[1]/main[1]/div[1]/nav[1]/ul[1]/li[3]/button[1]"

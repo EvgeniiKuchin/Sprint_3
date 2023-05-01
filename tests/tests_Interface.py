@@ -17,7 +17,7 @@ class Test_interface:
         password_field = browser.find_element(By.XPATH, Locators.ELELENT_IN_PASS)
         password_field.send_keys("123456")
         password_field.submit()
-        #driver.find_element(By.XPATH, Locators.BUTTON_SING_IN).click()
+
 
         browser.find_element(By.XPATH, Locators.BUTTON_PERSONAL_AREA).click()
         WebDriverWait(browser, 3).until(expected_conditions.presence_of_element_located((By.XPATH, Locators.TEXT_PROFILE)))
