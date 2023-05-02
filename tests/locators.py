@@ -9,17 +9,17 @@ class Locators:
     TEXT_PROFILE = "//a[contains(text(),'Профиль')]" # Текст на странице "Профиль"
     BUTTON_IN_ACCOUNT_FORM = "//a[contains(text(),'Войти')]" # Маленькая кнопка Войти на форме регистрации
     BUTTON_CONSTRUCTOR = "//p[contains(text(),'Конструктор')]" #
-    BUTTON_MAIN_LOGO = "//header/nav[1]/div[1]/a[1]/*[1]" #
-    BUTTON_SOUS = "//span[contains(text(),'Соусы')]" # Кнопка соусы
-    TEXT_SOUS = "//h2[contains(text(),'Соусы')]" # Текст соусы
-    FILLINGS = "/html[1]/body[1]/div[1]/div[1]/main[1]/section[1]/div[1]/div[3]/span[1]" # Кнопка начинки
-    TEXT_FILLINGS = "//h2[contains(text(),'Начинки')]" # Текст начинки
-    BAGEL = "/html[1]/body[1]/div[1]/div[1]/main[1]/section[1]/div[1]/div[1]/span[1]" # Кнопка булки
-    TEXT_BAGEL = "//h2[contains(text(),'Булки')]" # Текст булки
+    BUTTON_MAIN_LOGO = "//div[@class='AppHeader_header__logo__2D0X2']"
+    BUTTON_SOUS = "//span[@class='text text_type_main-default' and text()='Соусы']" # Кнопка соусы
+    TEXT_SOUS = "//h2[@class='text text_type_main-medium mb-6 mt-10' and text()='Соусы']" # Текст соусы
+    FILLINGS = "//span[@class='text text_type_main-default' and text()='Начинки']" # Кнопка начинки
+    TEXT_FILLINGS = "//h2[@class='text text_type_main-medium mb-6 mt-10' and text()='Начинки']" # Текст начинки
+    BAGEL = "//span[@class='text text_type_main-default' and text()='Булки']"
+    TEXT_BAGEL = "//h2[@class='text text_type_main-medium mb-6 mt-10' and text()='Булки']" # Текст булки
     ELELENT_NAME_REGISTRATION = "//label[text()='Имя']/following-sibling::input"
     ELELENT_EMAIL_REGISTRATION = "//label[text()='Email']/following-sibling::input"
     ELELENT_PASSWORD_REGISTTATION = "//label[text()='Пароль']/following-sibling::input"
     BUTTON_REGISTER = "//button[contains(text(),'Зарегистрироваться')]"
-    TEXT_INCORRECT_PASSWORD = "/html[1]/body[1]/div[1]/div[1]/main[1]/div[1]/form[1]/fieldset[3]/div[1]/p[1]"
-    BUTTON_LOG_OUT = "/html[1]/body[1]/div[1]/div[1]/main[1]/div[1]/nav[1]/ul[1]/li[3]/button[1]"
-    TEXT_ENTRANCE = "//h2[contains(text(),'Вход')]"
+    TEXT_INCORRECT_PASSWORD = "//p[@class='input__error text_type_main-default' and text()='Некорректный пароль']"
+    BUTTON_LOG_OUT = "//button[@class='Account_button__14Yp3 text text_type_main-medium text_color_inactive' and text()='Выход']"
+    TEXT_ENTRANCE = "//h2[text()='Вход']"
